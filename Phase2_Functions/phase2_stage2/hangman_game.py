@@ -3,7 +3,7 @@
 import random
 
 def hangman_game():
-    words=['python','coding','apple']
+    words=['python','coding','corp','sugar']
     secret_word = random.choice(words)
     display=[]
 
@@ -27,7 +27,7 @@ def hangman_game():
                 display[i] = guess
                 found = True
         if not found:
-            attempts -=1
+            attempts -= 1
             print["Wrong guess!"]
         else:
             print("Correct guess!")
